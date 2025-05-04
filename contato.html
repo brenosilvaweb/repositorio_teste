@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joalheria Aurora - Contato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Joalheria Aurora</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Fale Conosco</h1>
+            <p>Estamos prontos para ajudar você a encontrar a joia perfeita.</p>
+            <form class="contact-form">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Seu email" required>
+                
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="6" placeholder="Sua mensagem" required></textarea>
+                
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Sobre Nós</h3>
+            <p>Criamos joias que contam histórias, com paixão e precisão.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <p>Email: contato@joalheriaaurora.com</p>
+            <p>Telefone: (11) 9876-5432</p>
+            <div class="social-icons">
+                <a href="#" title="Facebook">FB</a>
+                <a href="#" title="Instagram">IG</a>
+                <a href="#" title="Pinterest">PN</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Joalheria Aurora. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
